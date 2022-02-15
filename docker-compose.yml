@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+
+  stargate.spa.web:
+    image: ${DOCKER_REGISTRY-}stargate-spa-web
+    ports:
+      - 8002:80
+    build:
+      context: .
+      dockerfile: src/Stargate.SinglePageApp.Web/Dockerfile
+    container_name: stargate-spa-web
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    command: dotnet Stargate.SinglePageApp.Web.dll
+    depends_on:
+      - db
+  
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    container_name: stargate-spa-db
+    environment:
+      POSTGRES_PASSWORD: PostgreSQL@docker
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    container_name: stargate-spa-dbadminer
+      
+networks:
+  default:
+    driver: bridge
