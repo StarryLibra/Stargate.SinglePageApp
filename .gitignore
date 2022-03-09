@@ -412,8 +412,3 @@ FodyWeavers.xsd
 
 # Except for .gitkeep
 !.gitkeep
-
-# Front-end wwwroot
-wwwroot/css/*.min.css
-wwwroot/js/*.min.js
-wwwroot/lib/
