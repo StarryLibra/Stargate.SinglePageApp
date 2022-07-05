@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-defineProps<{ msg: string }>()
+defineProps<{
+  msg: string
+}>()
 
 const count = ref(0)
 </script>
@@ -49,6 +51,10 @@ h1 {
 
 h3 {
   font-size: 1.2rem;
+}
+
+button {
+  margin: 0 0.5rem;
 }
 
 .greetings {

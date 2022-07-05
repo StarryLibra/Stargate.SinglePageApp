@@ -36,12 +36,12 @@
 </template>
 
 <script lang="ts">
-import Layout from '../layouts/PiniaDefault.vue'
-import PiniaLogo from '../components/PiniaLogo.vue'
+import Layout from '@/layouts/PiniaDefault.vue'
+import PiniaLogo from '@/components/PiniaLogo.vue'
 
 import { defineComponent, ref } from 'vue'
-import { useUserStore } from '../stores/user.js'
-import { useCartStore } from '../stores/cart.js'
+import { useUserStore } from '@/stores/user.js'
+import { useCartStore } from '@/stores/cart.js'
 
 export default defineComponent({
   components: { Layout, PiniaLogo },

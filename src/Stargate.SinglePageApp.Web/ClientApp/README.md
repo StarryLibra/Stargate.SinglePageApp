@@ -4,7 +4,7 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
 ## Type Support for `.vue` Imports in TS
 
@@ -75,33 +75,45 @@ pnpm run lint
 : Collection of essential Vue Composition Utilities for Vue 2 and 3
 
 ### devDependencies
-- [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx)
-: Provides Vue 3 JSX & TSX support with HMR.
 - [@vue/tsconfig](https://github.com/vuejs/tsconfig)
 : Base tsconfig for Vue 3 projects.
 - [Cypress](https://github.com/cypress-io/cypress)
 : Fast, easy and reliable testing for anything that runs in a browser.
+    - [Cypress ESLint Plugin](https://github.com/cypress-io/eslint-plugin-cypress)
+    : An ESLint plugin for projects that use Cypress
 - [Definitely Typed](https://github.com/DefinitelyTyped/DefinitelyTyped)
 : The repository for high quality TypeScript type definitions.
 - [ESLint](https://github.com/eslint/eslint)
 : Find and fix problems in your JavaScript code.
+    - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
+    : Official ESLint plugin for Vue.js
 - [jsdom](https://github.com/jsdom/jsdom)
 : A JavaScript implementation of various web standards, for use with Node.js
 - [Naive UI](https://github.com/TuSimple/naive-ui)
 : A Vue 3 Component Library. Fairly Complete. Theme Customizable. Uses TypeScript. Fast.
+    - [vfonts](https://github.com/07akioni/vfonts)
+    : Integreted fonts for easy usage.
+    - [xicons](https://github.com/07akioni/xicons)
+    : SVG Vue/React components integrated from fluentui-system-icons, ionicons, ant-design-icons, material-design-icons, Font-Awesome, tabler-icons and carbon icons. (Vue3, Vue2, React, SVG)
 - [Prettier](https://github.com/prettier/prettier)
-:Prettier is an opinionated code formatter.
+: Prettier is an opinionated code formatter.
+    - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+    : Turns off all rules that are unnecessary or might conflict with [Prettier](https://github.com/prettier/prettier).
+    - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+    : ESLint plugin for Prettier formatting
+- [Rush Stack](https://github.com/microsoft/rushstack)
+: Monorepo for tools developed by the Rush Stack community
 - [start-server-and-test](https://github.com/bahmutov/start-server-and-test)
 : Starts server, waits for URL, then runs test command; when the tests end, shuts down server
 - [TypeScript](https://github.com/Microsoft/TypeScript)
 : TypeScript is a superset of JavaScript that compiles to clean JavaScript output.
-- [Vite ⚡](https://github.com/vitejs/vite)
-: Next generation frontend tooling. It's fast!
-- [Vitest](https://github.com/vitest-dev/vitest)
-: A Vite-native test framework. It's fast!
 - [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
 : Vue 3 command line Type-Checking tool base on IDE plugin [Volar](https://github.com/johnsoncodehk/volar).
+- [Vite ⚡](https://github.com/vitejs/vite)
+: Next generation frontend tooling. It's fast!
+    - [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite/tree/main/packages/plugin-vue-jsx)
+    : Provides Vue 3 JSX & TSX support with HMR.
+- [Vitest](https://github.com/vitest-dev/vitest)
+: A Vite-native test framework. It's fast!
 - [Vue Test Utils](https://github.com/vuejs/test-utils)
 : Vue Test Utils for Vue 3
-- [xicons](https://github.com/07akioni/xicons)
-: SVG Vue/React components integrated from fluentui-system-icons, ionicons, ant-design-icons, material-design-icons, Font-Awesome, tabler-icons and carbon icons. (Vue3, Vue2, React, SVG)
